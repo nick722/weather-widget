@@ -28,8 +28,8 @@ article.widget {
 
 .date {
   position: absolute;
-  left: 360px;
-  top: 70px;
+  left: 362px;
+  top: 74px;
   line-height: 1;
 }
 
@@ -44,8 +44,8 @@ article.widget {
 
 .weather-today {
   position: absolute;
-  left: 474px;
-  top: 67px;
+  left: 471px;
+  top: 71px;
 }
 
 .temp-today {
@@ -59,23 +59,24 @@ article.widget {
 .temp-today span {
   font-size: 45px;
   position: absolute;
-  right: -13px;
+  right: -11px;
+  top: -6px;
 }
 
 .city {
   font-size: 24px;
   font-weight: 300;
-  margin: 0 0 0 6px;
+  margin: 0 0 0 3px;
 }
 
 .wind {
   width: 43px;
   height: 27px;
   background-image: url("../img/Wind.png");
-  background-position: center;
+  background-position: center center;
   float: left;
-  margin-top: 20px;
-  margin-left: 7px;
+  margin-top: 18px;
+  margin-left: 5px;
 }
 
 p.wind-speed {
@@ -86,6 +87,7 @@ p.wind-speed {
 .wind-speed > span {
   margin-left: 10px;
   font-size: 27px;
+  padding-right: 5px;
 }
 
 nav.forecast {
@@ -106,22 +108,14 @@ nav.forecast {
 }
 
 .forecast li.info {
-  width: 113px;
   text-align: center;
   position: relative;
-}
-
-.forecast li.cloudy {
-  width: 105px;
-}
-
-.forecast li.sunny {
-  width: 120px;
+  padding: 0 30px;
 }
 
 .info {
-  margin-top: 21px;
-  height: 75px;
+  margin-top: 14px;
+  height: 82px;
 }
 
 .info:nth-child(3) {
@@ -139,24 +133,25 @@ nav.forecast {
 .forecast li h3 {
   margin-bottom: 8px;
   font-weight: 300;
-
-  margin-top: -7px;
+  margin-top: -6px;
 }
 
 .forecast li p {
-  margin-top: 2px;
+  margin-top: 0px;
+  font-size: 14px;
 }
 
 .climacon {
   margin: 0 auto;
-  width: 40px;
-  height: 40px;
-  background-position: center center;
+  width: 43px;
+  height: 43px;
+  background-position: 4px 1px;
 }
 
 .forecast li.back .climacon {
   background: url("../img/Back.png") no-repeat;
-  background-position: right top;
+  background-position: 27px 7px;
+  margin-top: 25px;
 }
 
 .forecast li.rain .climacon {
@@ -177,7 +172,7 @@ nav.forecast {
 
 .forecast li.next .climacon {
   background: url("../img/Next.png") no-repeat;
-  background-position: center top;
+  background-position: -2px 7px;
   margin-top: 25px;
 }
 
