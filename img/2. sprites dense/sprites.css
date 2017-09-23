@@ -1,0 +1,46 @@
+.Cloudy, .Overcast, .Rain, .Sunny, .Wind, .Back, .Next{
+	background: url(sprites.png) no-repeat;
+}
+
+.Cloudy{
+	background-position: 0 0;
+	width: 41px;
+	height: 25px;
+}
+
+.Overcast{
+	background-position: 0 -30.975006103515625px ;
+	width: 48px;
+	height: 35px;
+}
+
+.Rain{
+	background-position: 0 -69.97500610351562px ;
+	width: 38px;
+	height: 36px;
+}
+
+.Sunny{
+	background-position: 0 -107.97500610351562px ;
+	width: 37px;
+	height: 35px;
+}
+
+.Wind{
+	background-position: 0 -147.97500610351562px ;
+	width: 43px;
+	height: 27px;
+}
+
+.Back{
+	background-position: 0 -184.97500610351562px ;
+	width: 11px;
+	height: 19px;
+}
+
+.Next{
+	background-position: -13.96875px -184.96875px ;
+	width: 12px;
+	height: 19px;
+}
+

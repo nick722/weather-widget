@@ -6,7 +6,7 @@ body {
   font-family: "Lato", Arial, sans-serif;
 }
 
-article.widget {
+.widget {
   margin: 0;
   padding: 0;
   background-image: url("../img/Paris.jpg");
@@ -27,25 +27,33 @@ article.widget {
 }
 
 .date {
-  position: absolute;
+  /*margin: 73px 0px 0 361px;*/
+  margin: 44px 0px 0 361px;
+  float: left;
+  /*position: absolute;*/
   left: 362px;
   top: 74px;
   line-height: 1;
+  /*display: inline-block;*/
 }
 
 .day {
-  margin: 0;
   font-size: 30px;
+  margin-bottom: 0;
 }
 
 .date time {
   font-size: 14px;
+  margin-left: 3px;
 }
 
 .weather-today {
-  position: absolute;
-  left: 471px;
-  top: 71px;
+  /*display: inline-block;*/
+  /*margin: 0px 0 0 480px;*/
+  margin: 71px 0 0 471px;
+  /*position: absolute;*/
+  /*left: 471px;
+  top: 71px;*/
 }
 
 .temp-today {
@@ -58,15 +66,18 @@ article.widget {
 
 .temp-today span {
   font-size: 45px;
-  position: absolute;
-  right: -11px;
-  top: -6px;
+  /*position: absolute;*/
+  /*right: -11px;
+  top: -6px;*/
+  position: relative;
+  left: 12px;
+  bottom: 48px;
 }
 
 .city {
   font-size: 24px;
   font-weight: 300;
-  margin: 0 0 0 3px;
+  margin: 0 0 0 2px;
 }
 
 .wind {
@@ -79,9 +90,10 @@ article.widget {
   margin-left: 5px;
 }
 
-p.wind-speed {
+.wind-speed {
   font-size: 13px;
   line-height: 1.6;
+  margin: 12px 0 0 49px;
 }
 
 .wind-speed > span {
@@ -90,8 +102,10 @@ p.wind-speed {
   padding-right: 5px;
 }
 
-nav.forecast {
-  margin-top: -16px;
+.forecast {
+  /*margin-top: -16px;*/
+  position: absolute;
+  bottom: 0;
   width: 696px;
   height: 108px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -104,73 +118,71 @@ nav.forecast {
 
 .forecast li {
   float: left;
-  font-size: 13px;
+  font-size: 14px;
+  /*border: 1px solid white;*/
 }
-
 .forecast li.info {
   text-align: center;
-  position: relative;
-  padding: 0 30px;
+  /*position: relative;*/
+  padding: 0 33px;
 }
-
 .info {
   margin-top: 14px;
   height: 82px;
 }
-
 .info:nth-child(3) {
   border-left: 1px solid #ccc;
 }
-
 .info:nth-child(4) {
   border-left: 1px solid #ccc;
 }
-
 .info:nth-child(5) {
   border-left: 1px solid #ccc;
 }
-
-.forecast li h3 {
+/*.forecast li h3 */
+.forecast time{
   margin-bottom: 8px;
   font-weight: 300;
   margin-top: -6px;
 }
-
 .forecast li p {
   margin-top: 0px;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
-
-.climacon {
+/*.climacon {
   margin: 0 auto;
   width: 43px;
   height: 43px;
   background-position: 4px 1px;
+}*/
+
+.forecast li.back, .forecast li.next {
+  width: 43px;
 }
 
-.forecast li.back .climacon {
+.forecast li.back {
   background: url("../img/Back.png") no-repeat;
   background-position: 27px 7px;
   margin-top: 25px;
 }
 
-.forecast li.rain .climacon {
+.forecast li.rain {
   background: url("../img/Rain.png") no-repeat;
 }
 
-.forecast li.cloudy .climacon {
+.forecast li.cloudy {
   background: url("../img/Cloudy.png") no-repeat;
 }
 
-.forecast li.sunny .climacon {
+.forecast li.sunny {
   background: url("../img/Sunny.png") no-repeat;
 }
 
-.forecast li.overcast .climacon {
+.forecast li.overcast {
   background: url("../img/Overcast.png") no-repeat;
 }
 
-.forecast li.next .climacon {
+.forecast li.next {
   background: url("../img/Next.png") no-repeat;
   background-position: -2px 7px;
   margin-top: 25px;
