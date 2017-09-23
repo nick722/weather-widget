@@ -18,23 +18,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.main {
-  height: 327px;
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-
-}
-
 .date {
-  /*margin: 73px 0px 0 361px;*/
   margin: 44px 0px 0 361px;
   float: left;
-  /*position: absolute;*/
   left: 362px;
   top: 74px;
   line-height: 1;
-  /*display: inline-block;*/
 }
 
 .day {
@@ -48,12 +37,7 @@ body {
 }
 
 .weather-today {
-  /*display: inline-block;*/
-  /*margin: 0px 0 0 480px;*/
   margin: 71px 0 0 471px;
-  /*position: absolute;*/
-  /*left: 471px;
-  top: 71px;*/
 }
 
 .temp-today {
@@ -66,9 +50,6 @@ body {
 
 .temp-today span {
   font-size: 45px;
-  /*position: absolute;*/
-  /*right: -11px;
-  top: -6px;*/
   position: relative;
   left: 12px;
   bottom: 48px;
@@ -80,20 +61,18 @@ body {
   margin: 0 0 0 2px;
 }
 
-.wind {
-  width: 43px;
-  height: 27px;
-  background-image: url("../img/Wind.png");
-  background-position: center center;
-  float: left;
-  margin-top: 18px;
-  margin-left: 5px;
-}
-
 .wind-speed {
   font-size: 13px;
   line-height: 1.6;
-  margin: 12px 0 0 49px;
+  margin: 12px 0 0 6px;
+}
+
+.wind-speed:before{
+  background-image: url("../img/Wind.png");
+  width: 43px;
+  height: 27px;
+  content: '  ';
+  display: inline-block;
 }
 
 .wind-speed > span {
@@ -103,7 +82,6 @@ body {
 }
 
 .forecast {
-  /*margin-top: -16px;*/
   position: absolute;
   bottom: 0;
   width: 696px;
@@ -119,84 +97,66 @@ body {
 }
 
 .forecast li {
-  margin-top: 6px;
   float: left;
   font-size: 15px;
-  /*width: 119px;*/
-  /*border: 1px solid white;*/
-  height: 108px;
-}
-.forecast li.info {
   text-align: center;
-  /*position: relative;*/
-
   padding: 0 31px;
-}
-
-.back {
-  /*width: 43px;*/
-  width: 43px;
-}
-
-.next {
-
-}
-
-.forecast li.info {
   margin-top: 14px;
   height: 82px;
 }
-.info:nth-child(3) {
+
+.border-left {
   border-left: 1px solid #ccc;
 }
-.info:nth-child(4) {
-  border-left: 1px solid #ccc;
-}
-.info:nth-child(5) {
-  border-left: 1px solid #ccc;
-}
-/*.forecast li h3 */
+
 .forecast time{
   margin-bottom: 8px;
   font-weight: 300;
   margin-top: -6px;
+  display: block;
 }
+
 .forecast p {
-  margin-top: 0px;
-  /*font-size: 14px;*/
+  margin-top: 51px;
 }
-/*.climacon {
-  margin: 0 auto;
-  width: 43px;
-  height: 43px;
-  background-position: 4px 1px;
-}*/
+
+.forecast span {
+  position: relative;
+  left: 1px;
+  bottom: 9px;
+  font-size: 8px;
+}
 
 .back {
   background: url("../img/Back.png") no-repeat;
-  background-position: 27px 7px;
+  background-position: 58px 32px;
   margin-top: 25px;
+  width: 43px;
 }
 
 .rain {
   background: url("../img/Rain.png") no-repeat;
+  background-position: 35px 20px;
 }
 
 .cloudy {
   background: url("../img/Cloudy.png") no-repeat;
+  background-position: 35px 25px;
 }
 
 .sunny {
   background: url("../img/Sunny.png") no-repeat;
+  background-position: 48px 21px;
 }
 
 .overcast {
   background: url("../img/Overcast.png") no-repeat;
+  background-position: 34px 20px;
 }
 
 .next {
   background: url("../img/Next.png") no-repeat;
-  background-position: -2px 7px;
+  background-position: 20px 31px;
   margin-top: 25px;
 }
 
