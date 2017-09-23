@@ -114,19 +114,35 @@ body {
 .forecast ul {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
+
 }
 
 .forecast li {
+  margin-top: 6px;
   float: left;
-  font-size: 14px;
+  font-size: 15px;
+  /*width: 119px;*/
   /*border: 1px solid white;*/
+  height: 108px;
 }
 .forecast li.info {
   text-align: center;
   /*position: relative;*/
-  padding: 0 33px;
+
+  padding: 0 31px;
 }
-.info {
+
+.back {
+  /*width: 43px;*/
+  width: 43px;
+}
+
+.next {
+
+}
+
+.forecast li.info {
   margin-top: 14px;
   height: 82px;
 }
@@ -145,7 +161,7 @@ body {
   font-weight: 300;
   margin-top: -6px;
 }
-.forecast li p {
+.forecast p {
   margin-top: 0px;
   /*font-size: 14px;*/
 }
@@ -156,33 +172,29 @@ body {
   background-position: 4px 1px;
 }*/
 
-.forecast li.back, .forecast li.next {
-  width: 43px;
-}
-
-.forecast li.back {
+.back {
   background: url("../img/Back.png") no-repeat;
   background-position: 27px 7px;
   margin-top: 25px;
 }
 
-.forecast li.rain {
+.rain {
   background: url("../img/Rain.png") no-repeat;
 }
 
-.forecast li.cloudy {
+.cloudy {
   background: url("../img/Cloudy.png") no-repeat;
 }
 
-.forecast li.sunny {
+.sunny {
   background: url("../img/Sunny.png") no-repeat;
 }
 
-.forecast li.overcast {
+.overcast {
   background: url("../img/Overcast.png") no-repeat;
 }
 
-.forecast li.next {
+.next {
   background: url("../img/Next.png") no-repeat;
   background-position: -2px 7px;
   margin-top: 25px;
