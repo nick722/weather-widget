@@ -68,10 +68,11 @@ body {
 }
 
 .wind-speed:before{
-  background-image: url("../img/Wind.png");
+  background-image: url("../img/sprites.png");
+  background-position: 0px -185px;
   width: 43px;
   height: 27px;
-  content: '  ';
+  content: '';
   display: inline-block;
 }
 
@@ -102,7 +103,7 @@ body {
   text-align: center;
   padding: 0 31px;
   margin-top: 14px;
-  height: 82px;
+  height: 94px;
 }
 
 .border-left {
@@ -110,14 +111,14 @@ body {
 }
 
 .forecast time{
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-weight: 300;
   margin-top: -6px;
   display: block;
 }
 
 .forecast p {
-  margin-top: 51px;
+  margin: 0;
 }
 
 .forecast span {
@@ -127,36 +128,57 @@ body {
   font-size: 8px;
 }
 
-.back {
-  background: url("../img/Back.png") no-repeat;
-  background-position: 58px 32px;
-  margin-top: 25px;
+li.back {
+  /*margin-top: 25px;*/
   width: 43px;
 }
 
-.rain {
-  background: url("../img/Rain.png") no-repeat;
-  background-position: 35px 20px;
+.back:after{
+  background: url("../img/sprites.png") no-repeat;
+  background-position: 0 -225px;
+  display: block;
+  content: '';
+  width: 11px;
+  height: 19px;
+  margin: 32px 0 0 28px;
 }
 
-.cloudy {
-  background: url("../img/Cloudy.png") no-repeat;
-  background-position: 35px 25px;
+.forecast time:after {
+  width: 52px;
+  height: 43px;
+  display: block;
+  margin: auto;
+  content: '';
 }
 
-.sunny {
-  background: url("../img/Sunny.png") no-repeat;
-  background-position: 48px 21px;
+.rain time:after {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: 6px -78px;
 }
 
-.overcast {
-  background: url("../img/Overcast.png") no-repeat;
-  background-position: 34px 20px;
+.cloudy time:after {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: 5px 13px;
 }
 
-.next {
-  background: url("../img/Next.png") no-repeat;
-  background-position: 20px 31px;
-  margin-top: 25px;
+.sunny time:after {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: 5px -128px;
 }
+
+.overcast time:after {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: 0 -27px;
+}
+
+.next:after{
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -20px -225px;
+  display: block;
+  content: '';
+  width: 12px;
+  height: 19px;
+  margin: 32px 0 0 -9px;
+}
+
 
