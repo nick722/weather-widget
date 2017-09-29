@@ -19,10 +19,8 @@ body {
 }
 
 .date {
-  margin: 44px 0px 0 361px;
-  float: left;
-  left: 362px;
-  top: 74px;
+  margin: 43px 29px;
+  float: right;
   line-height: 1;
 }
 
@@ -37,7 +35,8 @@ body {
 }
 
 .weather-today {
-  margin: 71px 0 0 471px;
+  float: right;
+  margin: 70px 88px 0 0;
 }
 
 .temp-today {
@@ -180,4 +179,115 @@ li.back {
   margin: 32px 0 0 -9px;
 }
 
+/* DESIGN FOR SMARTPHONES */
+
+@media (max-width: 600px) {
+  body {
+    background: gray;
+  }
+
+  .widget {
+    background-image: none;
+    background: #1b2c3b;
+    max-width: 100%;
+    height: 600px;
+  }
+
+  .weather-today {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .forecast {
+    padding: 0;
+  width: 100%;
+  position: static;
+  overflow: hidden;
+  height: 100%;
+  background: none;
+  }
+
+  .forecast li {
+    float: none;
+    margin: 14px 10px 0;
+    line-height: 82px;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.forecast time{
+  width: 100%;
+}
+
+}
+
+
+/* DESIGN FOR TABLETS */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background: #ccc;
+  }
+
+  .widget {
+    background-image: none;
+    background: #1b2c3b;
+    max-width: 100%;
+  }
+
+.weather-today {
+  margin-right: 60px;
+}
+
+  .forecast {
+  padding: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.forecast ul {
+  margin-top: 50px;
+}
+
+  .forecast li {
+    float: none;
+    margin: 14px 10px 0;
+    line-height: 82px;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.forecast li:nth-child(5) {
+  border-bottom: none;
+}
+
+.forecast time{
+  margin-bottom: 7px;
+  font-weight: 300;
+  display: block;
+  float: left;
+  width: 170px;
+  text-align: left;
+}
+
+.forecast time:after {
+  text-align: left;
+  float: right;
+  margin-top: 15px;
+}
+
+.forecast p {
+  float: right;
+}
+
+.border-left {
+  border-left: none;
+}
+
+.back, .next {
+  display: none;
+}
+
+}
 
