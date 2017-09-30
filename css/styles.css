@@ -184,43 +184,104 @@ li.back {
 /* TABLETS */
 @media (min-width: 601px) and (max-width: 991px) {
 
-body {
+  body {
     background: #ccc;
   }
 
   .widget {
     background-image: none;
     background: #1b2c3b;
+    width: 90%;
+    max-width: 696px;
+  }
+
+  .main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .date {
-    margin: 0;
+    margin: 20px auto;
   }
 
   .weather-today {
-    margin: 0;
+    margin: 20px auto;
+  }
+
+  .forecast {
+    width: 100%;
+  }
+
+  .forecast ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .forecast li {
-    grid-template-rows: 1fr;
+    padding: 0;
   }
 
-  /* end of tablets*/
+  .back:after{
+  margin: 32px 0 0 60px;
+}
+
+  .next:after{
+  margin: 32px 0 0 30px;
+}
+
 }
 
 /* PHONES */
 
 @media (max-width: 600px) {
 
-body {
+  body {
     background: gray;
   }
 
   .widget {
     background-image: none;
     background: #1b2c3b;
+    width: 90%;
+    height: 640px;
   }
 
-  /* end of phones*/
+  .main {
+    display: grid;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    grid-template-columns: 1fr 1fr;
   }
+
+
+  .date {
+    margin: 20px 30px;
+  }
+
+  .weather-today {
+    margin: 20px;
+  }
+
+  .forecast {
+    width: 100%;
+    position: static;
+    background: none;
+    padding-top: 20px
+  }
+
+  .forecast ul {
+    width: 100%;
+    display: grid;
+  }
+
+
+  .border-left {
+    border-left: none;
+  }
+
+  .back, .next {
+    display: none;
+  }
+
+}
