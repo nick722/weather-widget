@@ -8,49 +8,47 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
 <!-- Widget CSS -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/styles.css">
 <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <button class = "btn btn-success">Ура, я подключил Bootstrap!</button>
-  <article class="container">
-      <div class="weather-today">
+  <article class="container widget">
+    <div class="main col-md-12 col-sm-10">
+      <div class="weather-today   float-right">
         <p class="temp-today">12<span>o</span></p>
         <p class="city">Paris, France</p>
         <p class="wind-speed"><span>14</span> mph</p>
       </div>
-      <div class="date">
+      <div class="date  float-right">
         <p class="day">Friday</p>
         <time datetime="2017-08-23">August, 23rd</time>
       </div>
-    <nav class="row">
+    </div>
+    <nav class="row col-lg-12 col-md-6 col-sm-12">
       <ul>
-        <li class="back col-md-2 col-sm-1 col-xs-1">
+        <li class="back col-lg-2 col-md-12 col-sm-12">
         </li>
-        <li class ="rain col-md-2 col-sm-1 col-xs-1">
+        <li class ="rain col-lg-2 col-md-12 col-sm-12">
           <time datetime="2017-08-25">Monday</time>
           <p class="temp-forecast">10<span class="degree">o</span></p>
         </li>
-        <li class="cloudy border-left col-md-2 col-sm-1 col-xs-1">
+        <li class="cloudy border-left col-lg-2 col-md-12 col-sm-12">
           <time datetime="2017-08-26">Tuesday</time>
           <p class="temp-forecast">15<span class="degree">o</span></p>
         </li>
-        <li class="sunny border-left col-md-2 col-sm-1 col-xs-1">
+        <li class="sunny border-left col-lg-2 col-md-12 col-sm-12">
           <time datetime="2017-08-27"><span class="wednesday">Wednesday</span></time>
           <p class="temp-forecast">23<span class="degree">o</span></p>
         </li>
-        <li class="overcast border-left col-md-1 col-sm-1 col-xs-1">
+        <li class="overcast border-left col-lg-2 col-md-12 col-sm-12">
           <time datetime="2017-08-28">Thursday</time>
           <p class="temp-forecast">18<span class="degree">o</span></p>
         </li>
-        <li class="next col-md-2 col-sm-1 col-xs-1">
+        <li class="next col-lg-2 col-md-12">
         </li>
       </ul>
     </nav>

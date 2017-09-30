@@ -18,9 +18,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.date {
-  margin: 43px 29px;
+main {
   float: right;
+}
+
+.date {
+  margin: 71px 27px;
   line-height: 1;
 }
 
@@ -35,7 +38,6 @@ body {
 }
 
 .weather-today {
-  float: right;
   margin: 70px 88px 0 0;
 }
 
@@ -84,7 +86,6 @@ body {
 .row {
   position: absolute;
   bottom: 0;
-  /*width: 696px;*/
   width: 100%;
   height: 108px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -102,7 +103,6 @@ body {
   float: left;
   font-size: 15px;
   text-align: center;
-  /*padding: 0 31px;*/
   padding: 0 36px;
   margin-top: 14px;
   height: 82px;
@@ -132,10 +132,6 @@ body {
 
 .wednesday {
   margin-left: -10px;
-}
-
-li.back {
-  /*width: 43px;*/
 }
 
 .back:after{
@@ -186,3 +182,76 @@ li.back {
   margin: 32px 0 0 -9px;
 }
 
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background: #ccc;
+  }
+
+  .widget {
+    background-image: none;
+    background: #1b2c3b;
+  }
+
+  .weather-today{
+    margin: 70px 55px 0 0;
+  }
+
+  .row {
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .border-left {
+    border-left: none;
+  }
+
+  .back, .next {
+    display: none;
+  }
+}
+/* PHONES */
+
+@media (max-width: 768px) {
+  body {
+    background: gray;
+  }
+
+  .widget {
+    background-image: none;
+    background: #1b2c3b;
+    height: 640px;
+  }
+
+  .main {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .weather-today{
+    margin-top: 20px;
+  }
+
+  .date {
+    margin-top: 40px;
+  }
+
+  .row {
+    height: 100%;
+    padding-top: 10px;
+    position: static;
+    clear: both;
+    background: none;
+  }
+
+  .border-left {
+    border-left: none;
+  }
+
+  .back, .next {
+    display: none;
+  }
+
+}
