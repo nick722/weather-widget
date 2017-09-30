@@ -181,3 +181,46 @@ li.back {
 }
 
 
+/* TABLETS */
+@media (min-width: 601px) and (max-width: 991px) {
+
+body {
+    background: #ccc;
+  }
+
+  .widget {
+    background-image: none;
+    background: #1b2c3b;
+    display: grid;
+  }
+
+  .date {
+    margin: 0;
+  }
+
+  .weather-today {
+    margin: 0;
+  }
+
+  .forecast li {
+    grid-template-rows: 1fr;
+  }
+
+  /* end of tablets*/
+}
+
+/* PHONES */
+
+@media (max-width: 600px) {
+
+body {
+    background: gray;
+  }
+
+  .widget {
+    background-image: none;
+    background: #1b2c3b;
+  }
+
+  /* end of phones*/
+  }
