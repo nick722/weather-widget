@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather widget</title>
+  <title>Weather container</title>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<!-- Widget CSS -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/styles.css">
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </head>
 <body>
-  <article class="widget">
+  <article class="container">
       <div class="weather-today">
         <p class="temp-today">12<span>o</span></p>
         <p class="city">Paris, France</p>
@@ -22,28 +27,27 @@
         <p class="day">Friday</p>
         <time datetime="2017-08-23">August, 23rd</time>
       </div>
-    <!-- </div> -->
-    <nav class="forecast">
+    <nav class="row">
       <ul>
-        <li class="back">
+        <li class="back col-lg-1 col-md-2 col-xs-1">
         </li>
-        <li class ="rain">
+        <li class ="rain col-lg-1 col-md-2 col-xs-1">
           <time datetime="2017-08-25">Monday</time>
           <p class="temp-forecast">10<span>o</span></p>
         </li>
-        <li class="cloudy border-left">
+        <li class="cloudy border-left col-lg-1 col-md-2 col-xs-1">
           <time datetime="2017-08-26">Tuesday</time>
           <p class="temp-forecast">15<span>o</span></p>
         </li>
-        <li class="sunny border-left">
+        <li class="sunny border-left col-lg-1 col-md-2 col-xs-1">
           <time datetime="2017-08-27">Wednesday</time>
           <p class="temp-forecast">23<span>o</span></p>
         </li>
-        <li class="overcast border-left">
+        <li class="overcast border-left col-lg-1 col-md-2 col-xs-1">
           <time datetime="2017-08-28">Thursday</time>
           <p class="temp-forecast">18<span>o</span></p>
         </li>
-        <li class="next">
+        <li class="next col-lg-1 col-md-2 col-xs-1">
         </li>
       </ul>
     </nav>
