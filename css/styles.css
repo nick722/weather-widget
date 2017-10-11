@@ -223,12 +223,12 @@ li.back {
   }
 
   .back:after{
-  margin: 32px 0 0 60px;
-}
+    margin: 32px 0 0 60px;
+  }
 
   .next:after{
-  margin: 32px 0 0 30px;
-}
+    margin: 32px 0 0 30px;
+  }
 
 }
 
@@ -243,7 +243,7 @@ li.back {
   .widget {
     background-image: none;
     background: #1b2c3b;
-    width: 90%;
+    width: 100%;
     height: 640px;
   }
 
@@ -252,6 +252,7 @@ li.back {
     width: 100%;
     border-bottom: 1px solid #fff;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
   }
 
 
@@ -275,6 +276,20 @@ li.back {
     display: grid;
   }
 
+  .forecast li time {
+    margin: 0;
+    font-weight: 300;
+    display: block;
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+
+  .forecast time:after {
+  text-align: left;
+  float: right;
+  margin-top: -15px;
+}
 
   .border-left {
     border-left: none;
