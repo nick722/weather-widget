@@ -6,7 +6,7 @@ body {
   font-family: "Lato", Arial, sans-serif;
 }
 
-.container {
+.widget {
   margin: 0;
   padding: 0;
   background-image: url("../img/Paris.jpg");
@@ -16,10 +16,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-main {
-  float: right;
 }
 
 .date {
@@ -32,7 +28,7 @@ main {
   margin-bottom: 0;
 }
 
-.date time {
+.month-day {
   font-size: 14px;
   margin-left: 3px;
 }
@@ -49,7 +45,7 @@ main {
   line-height: 0.9;
 }
 
-.temp-today span {
+span.degree {
   font-size: 45px;
   position: relative;
   left: 12px;
@@ -77,13 +73,13 @@ main {
   display: inline-block;
 }
 
-.wind-speed > span {
+.wind-speed-value {
   margin-left: 10px;
   font-size: 27px;
   padding-right: 5px;
 }
 
-.row {
+.forecast {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -92,14 +88,14 @@ main {
   margin-left: 0;
 }
 
-.row ul {
+.forecast-list {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
 
 }
 
-.row li {
+.forecast-item {
   float: left;
   font-size: 15px;
   text-align: center;
@@ -112,18 +108,19 @@ main {
   border-left: 1px solid #ccc;
 }
 
-.row time{
+.weekday{
   margin-bottom: 7px;
   font-weight: 300;
   margin-top: -6px;
   display: block;
 }
 
-.row p {
+.temp-forecast {
   margin: 0;
+  text-align: right;
 }
 
-.degree {
+.forecast-degree {
   position: relative;
   left: 1px;
   bottom: 9px;
@@ -144,7 +141,7 @@ main {
   margin: 32px 0 0 28px;
 }
 
-.row time:after {
+.weekday:after {
   width: 52px;
   height: 43px;
   display: block;
@@ -152,22 +149,22 @@ main {
   content: '';
 }
 
-.rain time:after {
+.rain .weekday:after {
   background: url("../img/sprites.png") no-repeat;
   background-position: 6px -78px;
 }
 
-.cloudy time:after {
+.cloudy .weekday:after {
   background: url("../img/sprites.png") no-repeat;
   background-position: 5px 13px;
 }
 
-.sunny time:after {
+.sunny .weekday:after {
   background: url("../img/sprites.png") no-repeat;
   background-position: 5px -128px;
 }
 
-.overcast time:after {
+.overcast .weekday:after {
   background: url("../img/sprites.png") no-repeat;
   background-position: 0 -27px;
 }
@@ -197,8 +194,9 @@ main {
     margin: 70px 55px 0 0;
   }
 
-  .row {
+  .forecast {
     height: 100%;
+    width: 50%;
     padding-top: 20px;
   }
 
@@ -212,7 +210,7 @@ main {
 }
 /* PHONES */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     background: gray;
   }
@@ -220,7 +218,8 @@ main {
   .widget {
     background-image: none;
     background: #1b2c3b;
-    height: 640px;
+    height: 100%;
+    width: 100%;
   }
 
   .main {
@@ -231,14 +230,18 @@ main {
   }
 
   .weather-today{
-    margin-top: 20px;
+    margin: 20px 40px 0 0;
+  }
+
+  .city {
+    font-size: 20px;
   }
 
   .date {
-    margin-top: 40px;
+    margin: 40px 10px 0 0;
   }
 
-  .row {
+  .forecast {
     height: 100%;
     padding-top: 10px;
     position: static;
@@ -246,12 +249,46 @@ main {
     background: none;
   }
 
-  .border-left {
-    border-left: none;
+  .forecast-list {
+    margin: 0 auto;
+    width: 100%;
   }
 
-  .back, .next {
-    display: none;
+  .forecast-item {
+    float: none;
+    margin: 0;
+    line-height: 82px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
   }
+
+  .weekday {
+   margin-bottom: 7px;
+   font-weight: 300;
+   display: block;
+   float: left;
+   text-align: left;
+   width: 70%;
+ }
+
+ .weekday:after {
+  text-align: left;
+  float: right;
+  margin-top: 15px;
+
+}
+
+.temp-forecast {
+  float: right;
+  height: 100%;
+}
+
+.border-left {
+  border-left: none;
+}
+
+.back, .next {
+  display: none;
+}
 
 }

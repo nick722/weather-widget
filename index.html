@@ -18,37 +18,37 @@
 <body>
   <article class="container widget">
     <div class="main col-md-12 col-sm-10">
-      <div class="weather-today   float-right">
-        <p class="temp-today">12<span>o</span></p>
+      <div class="weather-today float-right">
+        <p class="temp-today">12<span class="degree">o</span></p>
         <p class="city">Paris, France</p>
-        <p class="wind-speed"><span>14</span> mph</p>
+        <p class="wind-speed"><span class="wind-speed-value">14</span> mph</p>
       </div>
       <div class="date  float-right">
         <p class="day">Friday</p>
-        <time datetime="2017-08-23">August, 23rd</time>
+        <time class="month-day" datetime="2017-08-23">August, 23rd</time>
       </div>
     </div>
-    <nav class="row col-lg-12 col-md-6 col-sm-12">
-      <ul>
-        <li class="back col-lg-2 col-md-12 col-sm-12">
+    <nav class="row col-lg-12 col-md-6 col-sm-12 forecast">
+      <ul class="forecast-list">
+        <li class="forecast-item back col-lg-2 col-md-12 col-sm-12">
         </li>
-        <li class ="rain col-lg-2 col-md-12 col-sm-12">
-          <time datetime="2017-08-25">Monday</time>
-          <p class="temp-forecast">10<span class="degree">o</span></p>
+        <li class ="forecast-item rain col-lg-2 col-md-12 col-sm-12">
+          <time class="weekday" classforecast-items  datetime="2017-08-25">Monday</time>
+          <p class="temp-forecast">10<span class="forecast-degree">o</span></p>
         </li>
-        <li class="cloudy border-left col-lg-2 col-md-12 col-sm-12">
-          <time datetime="2017-08-26">Tuesday</time>
-          <p class="temp-forecast">15<span class="degree">o</span></p>
+        <li class="forecast-item cloudy border-left col-lg-2 col-md-12 col-sm-12">
+          <time class="weekday" datetime="2017-08-26">Tuesday</time>
+          <p class="temp-forecast">15<span class="forecast-degree">o</span></p>
         </li>
-        <li class="sunny border-left col-lg-2 col-md-12 col-sm-12">
-          <time datetime="2017-08-27"><span class="wednesday">Wednesday</span></time>
-          <p class="temp-forecast">23<span class="degree">o</span></p>
+        <li class="forecast-item sunny border-left col-lg-2 col-md-12 col-sm-12">
+          <time class="weekday" datetime="2017-08-27"><span class="wednesday">Wednesday</span></time>
+          <p class="temp-forecast">23<span class="forecast-degree">o</span></p>
         </li>
-        <li class="overcast border-left col-lg-2 col-md-12 col-sm-12">
-          <time datetime="2017-08-28">Thursday</time>
-          <p class="temp-forecast">18<span class="degree">o</span></p>
+        <li class="forecast-item overcast border-left col-lg-2 col-md-12 col-sm-12">
+          <time class="weekday" datetime="2017-08-28">Thursday</time>
+          <p class="temp-forecast">18<span class="forecast-degree">o</span></p>
         </li>
-        <li class="next col-lg-2 col-md-12">
+        <li class="forecast-item next col-lg-2 col-md-12">
         </li>
       </ul>
     </nav>
