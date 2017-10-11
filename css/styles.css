@@ -247,7 +247,7 @@ li.back {
 
   .main {
     border-bottom: 1px solid #fff;
-    padding: 20px 0;
+    padding: 40px 0 0;
     height: auto;
     display: flex;
     justify-content: space-around;
