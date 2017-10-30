@@ -6,45 +6,55 @@
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js" type="text/javascript" async></script>
 </head>
 <body>
   <article class="widget">
+    <div id="weatherIcon"></div>
+    <!-- <img src="http://openweathermap.org/img/w/10d.png" alt="weather icon"> -->
+    <div class="search">
+      <form>
+        <input id="citySearch" type="text"><input class="searchBtn" id="searchBtn" type="submit" value="Search">
+        </form>
+        <p id="error" class="error"></p>
+      </div>
       <div class="date">
-        <p class="day">Friday</p>
-        <time datetime="2017-08-23">August, 23rd</time>
+        <p id="weekday" class="day">Friday</p>
+        <time id="today" datetime="2017-08-23">August, 23rd</time>
       </div>
       <div class="weather-today">
-        <p class="temp-today">12<span>o</span></p>
-        <p class="city">Paris, France</p>
-        <p class="wind-speed"><span>14</span> mph</p>
+        <p class="temp-today"><span id="currentTemperature">12</span><span class="degree">o</span></p>
+        <p id="city" class="city">Paris, France</p>
+        <p class="wind-speed"><span id="wind">14</span> mps</p>
       </div>
-    <nav class="forecast">
-      <ul>
-        <li class="back">
-        </li>
-        <li class ="rain">
-            <time datetime="2017-08-25">Monday</time>
-            <p class="temp-forecast">10<span>o</span></p>
-        </li>
-        <li class="cloudy border-left">
-            <time datetime="2017-08-26">Tuesday</time>
-            <p class="temp-forecast">15<span>o</span></p>
-        </li>
-        <li class="sunny border-left">
-            <time datetime="2017-08-27">Wednesday</time>
-            <p class="temp-forecast">23<span>o</span></p>
-        </li>
-        <li class="overcast border-left">
-            <time datetime="2017-08-28">Thursday</time>
-            <p class="temp-forecast">18<span>o</span></p>
-        </li>
-        <li class="next">
-        </li>
-      </ul>
-    </nav>
-  </article>
-</body>
-</html>
+      <nav class="forecast">
+        <ul>
+          <li class="back">
+          </li>
+          <li class ="rain">
+            <time id="weekday1" datetime="2017-08-25">Monday</time>
+            <p class="temp-forecast"><span id="day1temperature">10</span><span class="forecast-degree">o</span></p>
+          </li>
+          <li class="cloudy border-left">
+            <time id="weekday2" datetime="2017-08-26">Tuesday</time>
+            <p class="temp-forecast"><span id="day2temperature">15</span><span class="forecast-degree">o</span></p>
+          </li>
+          <li class="sunny border-left">
+            <time id="weekday3" datetime="2017-08-27">Wednesday</time>
+            <p class="temp-forecast"><span id="day3temperature">23</span><span class="forecast-degree">o</span></p>
+          </li>
+          <li class="overcast border-left">
+            <time id="weekday4" datetime="2017-08-28">Thursday</time>
+            <p class="temp-forecast"><span id="day4temperature">18</span><span class="forecast-degree">o</span></p>
+          </li>
+          <li class="next">
+          </li>
+        </ul>
+      </nav>
+    </article>
+    <!-- <script src="js/script.js" type="text/javascript"></script> -->
+  </body>
+  </html>
