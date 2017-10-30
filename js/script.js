@@ -55,26 +55,23 @@ function getForecast(searchedCity) {
       // document.getElementById('day2').innerHTML = day2;
       document.getElementById('weekday2').innerHTML = weekdays[day2.getDay()];
       document.getElementById('day2temperature').innerHTML = Math.round(responseParsedText.list[14].main.temp);
-      var icon2 = document.createElement('img');
-      weekday2.after(icon2);
+
       var icon2id = responseParsedText.list[14].weather[0].icon;
-      icon2.src = 'http://openweathermap.org/img/w/' + icon2id + '.png';
+      document.getElementById('icon2').style.backgroundImage  = "url('http://openweathermap.org/img/w/" + icon2id + ".png')";
 
       // document.getElementById('day3').innerHTML = day3;
       document.getElementById('weekday3').innerHTML = weekdays[day3.getDay()];
       document.getElementById('day3temperature').innerHTML = Math.round(responseParsedText.list[22].main.temp);
-      var icon3 = document.createElement('img');
-      weekday3.after(icon3);
+
       var icon3id = responseParsedText.list[22].weather[0].icon;
-      icon3.src = 'http://openweathermap.org/img/w/' + icon3id + '.png';
+      document.getElementById('icon3').style.backgroundImage  = "url('http://openweathermap.org/img/w/" + icon3id + ".png')";
 
       // document.getElementById('day4').innerHTML = day4;
       document.getElementById('weekday4').innerHTML = weekdays[day4.getDay()];
       document.getElementById('day4temperature').innerHTML = Math.round(responseParsedText.list[30].main.temp);
-      var icon4 = document.createElement('img');
-      weekday4.after(icon4);
+
       var icon4id = responseParsedText.list[30].weather[0].icon;
-      icon4.src = 'http://openweathermap.org/img/w/' + icon4id + '.png';
+      document.getElementById('icon4').style.backgroundImage  = "url('http://openweathermap.org/img/w/" + icon4id + ".png')";
 
       // WEATHER ICON///////////////////////////////////////////////////////////////////////////////////////
       // var icon1 = document.createElement('img');

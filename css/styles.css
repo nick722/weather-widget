@@ -163,7 +163,7 @@ li.back {
   content: '';
 }*/
 
-#icon1 {
+#icon1, #icon2, #icon3, #icon4 {
   width: 52px;
   height: 43px;
   /*background: gray;*/
