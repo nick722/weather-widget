@@ -155,12 +155,18 @@ li.back {
   margin: 32px 0 0 28px;
 }
 
-.forecast time:after {
+/*.forecast time:after {
   width: 52px;
   height: 43px;
   display: block;
   margin: auto;
   content: '';
+}*/
+
+#icon1 {
+  width: 52px;
+  height: 43px;
+  /*background: gray;*/
 }
 
 /*#weekday1 {

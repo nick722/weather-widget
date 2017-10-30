@@ -49,29 +49,38 @@ function getForecast(searchedCity) {
       document.getElementById('weekday1').innerHTML = weekdays[day1.getDay()];
       document.getElementById('day1temperature').innerHTML = Math.round(responseParsedText.list[6].main.temp);
 
+      var icon1id = responseParsedText.list[6].weather[0].icon;
+      document.getElementById('icon1').style.backgroundImage  = "url('http://openweathermap.org/img/w/" + icon1id + ".png')";
+
       // document.getElementById('day2').innerHTML = day2;
       document.getElementById('weekday2').innerHTML = weekdays[day2.getDay()];
       document.getElementById('day2temperature').innerHTML = Math.round(responseParsedText.list[14].main.temp);
+      var icon2 = document.createElement('img');
+      weekday2.after(icon2);
+      var icon2id = responseParsedText.list[14].weather[0].icon;
+      icon2.src = 'http://openweathermap.org/img/w/' + icon2id + '.png';
 
       // document.getElementById('day3').innerHTML = day3;
       document.getElementById('weekday3').innerHTML = weekdays[day3.getDay()];
       document.getElementById('day3temperature').innerHTML = Math.round(responseParsedText.list[22].main.temp);
+      var icon3 = document.createElement('img');
+      weekday3.after(icon3);
+      var icon3id = responseParsedText.list[22].weather[0].icon;
+      icon3.src = 'http://openweathermap.org/img/w/' + icon3id + '.png';
 
       // document.getElementById('day4').innerHTML = day4;
       document.getElementById('weekday4').innerHTML = weekdays[day4.getDay()];
       document.getElementById('day4temperature').innerHTML = Math.round(responseParsedText.list[30].main.temp);
+      var icon4 = document.createElement('img');
+      weekday4.after(icon4);
+      var icon4id = responseParsedText.list[30].weather[0].icon;
+      icon4.src = 'http://openweathermap.org/img/w/' + icon4id + '.png';
 
       // WEATHER ICON///////////////////////////////////////////////////////////////////////////////////////
-      var img = new Image();
-      var div = document.getElementById('weatherIcon');
-      // window.getComputedStyle(document.querySelector('#weekday1'), ':after').style.background-image = 'http://openweathermap.org/img/w/' + imgId + '.png';
-      img.onload = function() {
-        div.appendChild(img);
-        weekday1.after(img);
-      };
-      // img.src = 'http://openweathermap.org/img/w/10d.png';
-      var imgId = document.getElementById('weatherIcon').innerHTML = responseParsedText.list[6].weather[0].icon;
-      img.src = 'http://openweathermap.org/img/w/' + imgId + '.png';
+      // var icon1 = document.createElement('img');
+      // weekday1.after(icon1);
+      // var icon1id = document.getElementById('weatherIcon').innerHTML = responseParsedText.list[6].weather[0].icon;
+      // icon1.src = 'http://openweathermap.org/img/w/' + icon1id + '.png';
 
 
 
