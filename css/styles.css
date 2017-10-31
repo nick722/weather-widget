@@ -25,6 +25,7 @@ body {
 .search {
   margin: 0 0 0 220px;
   color: #000;
+  float: left;
 }
 
 .error {
@@ -163,9 +164,10 @@ li.back {
   content: '';
 }*/
 
-#icon1, #icon2, #icon3, #icon4 {
+.weather-icons {
   width: 52px;
   height: 43px;
+  margin: 0 auto;
   /*background: gray;*/
 }
 
