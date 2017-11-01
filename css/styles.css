@@ -25,19 +25,17 @@ body {
 .search {
   margin: 0 0 0 220px;
   color: #000;
-  float: left;
 }
 
 .error {
   margin: 0;
+  position: absolute;
 }
 
 .date {
-  margin: 44px 0px 0 361px;
-  float: left;
-  left: 362px;
-  top: 74px;
+  float: right;
   line-height: 1;
+  margin: 17px 29px;
 }
 
 .day {
@@ -51,7 +49,9 @@ body {
 }
 
 .weather-today {
-  margin: 71px 0 0 471px;
+  float: right;
+  margin: 45px 0 0;
+  width: 225px;
 }
 
 .temp-today {
@@ -156,28 +156,11 @@ li.back {
   margin: 32px 0 0 28px;
 }
 
-/*.forecast time:after {
-  width: 52px;
-  height: 43px;
-  display: block;
-  margin: auto;
-  content: '';
-}*/
-
 .weather-icons {
   width: 52px;
   height: 43px;
   margin: 0 auto;
-  /*background: gray;*/
 }
-
-/*#weekday1 {
-  background: gray;
-}*/
-/*.rain time:after {
-  background: url("../img/sprites.png") no-repeat;
-  background-position: 6px -78px;
-}*/
 
 .cloudy time:after {
   background: url("../img/sprites.png") no-repeat;
