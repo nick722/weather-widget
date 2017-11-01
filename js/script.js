@@ -20,7 +20,7 @@ function getForecast(searchedCity) {
 
       for (var i = 0; i < 5; i++) {
         var day = responseParsedText.list[i * 8];
-        var date = new Date(day.dt*1000);
+        var date = new Date(day.dt*1000 - 3600000);// Extracting 3 hours from forecast time to get the current time
         var iconId = day.weather[0].icon;
         document.getElementById('weekday' + i).innerHTML = weekdays[date.getDay()];
         document.getElementById('dayTemp' + i).innerHTML = Math.round(day.main.temp);
